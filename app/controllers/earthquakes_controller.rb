@@ -3,8 +3,12 @@ class EarthquakesController < ApplicationController
 
   # GET /earthquakes (with pagination)
   def index
-    earthquakes = Earthquake.page(params[:page]).per(20)
+    earthquakes = Rails.cache.fetch("earthquakes_page_#{params[:page]}", expires_in: 12.hours) do
+      Earthquake.page(params[:page]).per(20)
+    end
     render json: earthquakes
+    # earthquakes = Earthquake.page(params[:page]).per(20)
+    # render json: earthquakes
   end
 
   # GET /earthquakes/:id
