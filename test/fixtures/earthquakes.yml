@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  magnitude: 1.5
+  depth: 1.5
+  occurred_at: 2024-09-13 00:04:52
+
+two:
+  location: MyString
+  magnitude: 1.5
+  depth: 1.5
+  occurred_at: 2024-09-13 00:04:52
