@@ -13,7 +13,7 @@ gem 'redis', '~> 5.3'
 
 gem 'graphql', '~> 2.3', '>= 2.3.16'
 
-gem 'rswag', '~> 2.14'
+gem 'rswag', '~> 2.15'
 
 
 # Use the Puma web server [https://github.com/puma/puma]
