@@ -11,7 +11,7 @@ gem 'doorkeeper', '~> 5.7', '>= 5.7.1'
 
 gem 'redis', '~> 5.3'
 
-gem 'graphql', '~> 2.3', '>= 2.3.16'
+gem 'graphql', '~> 2.3'
 
 gem 'rswag', '~> 2.14'
 
