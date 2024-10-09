@@ -17,7 +17,7 @@ earthquakes = JSON.parse(response)["features"]
 
 earthquakes.each do |earthquake|
   properties = earthquake["properties"]
-  Earthquake.first_or_create!(
+  Earthquake.create!(
     location: properties["place"],
     magnitude: properties["mag"],
     depth: earthquake["geometry"]["coordinates"][2],
