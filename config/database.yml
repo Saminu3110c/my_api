@@ -87,24 +87,48 @@
 
   
 # update
+# default: &default
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#   username: "saminu3110c"
+#   password: "saminu2121"
+#   host: localhost
+
+# development:
+#   <<: *default
+#   database: my_api_development
+
+# test:
+#   <<: *default
+#   database: my_api_test
+
+# production:
+#   <<: *default
+#   database: my_api_production
+#   username: my_api
+#   password: <%= ENV['MY_API_DATABASE_PASSWORD'] %>
+
+# Updated for Render Deployment
 default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: "saminu3110c"
-  password: "saminu2121"
-  host: localhost
 
 development:
   <<: *default
   database: my_api_development
+  username: saminu3110c
+  password: saminu2121
+  host: localhost
 
 test:
   <<: *default
   database: my_api_test
+  username: saminu3110c
+  password: saminu2121
+  host: localhost
 
 production:
   <<: *default
-  database: my_api_production
-  username: my_api
-  password: <%= ENV['MY_API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
