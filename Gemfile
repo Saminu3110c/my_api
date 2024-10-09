@@ -13,7 +13,19 @@ gem 'redis', '~> 5.3'
 
 gem 'graphql', '~> 2.3', '>= 2.3.16'
 
-gem 'rswag', '~> 2.14'
+gem 'graphiql-rails', group: :development
+
+# gem 'rswag', '~> 2.14'
+
+# gem 'swagger-blocks'
+
+gem 'kaminari'
+
+gem 'net-pop', github: 'ruby/net-pop'
+
+gem 'net-protocol'
+
+gem 'error_highlight', '~> 0.6.0'
 
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -54,3 +66,5 @@ group :development, :test do
 end
 
 
+
+gem "propshaft", "~> 1.1"
