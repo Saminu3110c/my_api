@@ -1,5 +1,5 @@
 class Api::V1::EarthquakesController < ApplicationController
-    before_action :doorkeeper_authorize!
+    # before_action :doorkeeper_authorize!
     before_action :set_earthquake, only: [:show, :update, :destroy]
   
     # GET /earthquakes (with pagination)
