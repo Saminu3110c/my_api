@@ -166,8 +166,7 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.8)
-    pg (1.5.8-x64-mingw-ucrt)
+    pg (1.5.9)
     propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -293,7 +292,7 @@ DEPENDENCIES
   kaminari
   net-pop!
   net-protocol
-  pg (~> 1.1)
+  pg (~> 1.5)
   propshaft (~> 1.1)
   puma (>= 5.0)
   rails (~> 7.2.1)
