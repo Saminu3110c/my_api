@@ -102,7 +102,7 @@ GEM
     doorkeeper (5.7.1)
       railties (>= 5)
     drb (2.2.1)
-    error_highlight (0.6.0)
+    error_highlight (0.7.0)
     erubi (1.13.0)
     fiber-storage (1.0.0)
     globalid (1.2.1)
@@ -287,7 +287,7 @@ DEPENDENCIES
   debug
   devise (~> 4.9, >= 4.9.4)
   doorkeeper (~> 5.7, >= 5.7.1)
-  error_highlight (~> 0.6.0)
+  error_highlight (~> 0.7.0)
   graphiql-rails
   graphql (~> 2.3, >= 2.3.16)
   kaminari
