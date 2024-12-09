@@ -7,7 +7,7 @@ gem "pg", "~> 1.1"
 
 gem 'devise', '~> 4.9', '>= 4.9.4'
 
-gem 'doorkeeper', '~> 5.7', '>= 5.7.1'
+gem 'doorkeeper', '~> 5.8'
 
 gem 'redis', '~> 5.3'
 
