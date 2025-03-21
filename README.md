@@ -245,7 +245,7 @@ You can access the hosted version of the API via the following link as seen in t
         }
     }
     ```
-    - **Description:** This query retrieves a list of all earthquakes from the database with agnitude greater than a specified value (max 20 elements per page).
+    - **Description:** This query retrieves a list of all earthquakes from the database with magnitude greater than a specified value (max 20 elements per page).
 3. Create Earthquake
     - Example Mutation:
     ```graphql
